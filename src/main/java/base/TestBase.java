@@ -8,18 +8,11 @@ import java.util.*;
 
 public class TestBase {
     public static WebDriver driver;
-    public static Properties properties;
-    public TestBase(){
-    try{
-        properties = new Properties();
-        FileInputStream fs = new FileInputStream("C:\\Users\\mayank.rathore\\IdeaProjects\\Damco_Framework\\src\\main\\java\\config\\config.properties");
-        properties.load(fs);
-    }catch (Exception e ){
-        System.out.println(e);
-    }
-}
-public static void setup(String browser) throws Exception{
- if(browser.equalsIgnoreCase("chrome")&&(driver==null)){
+
+    public static void setup() throws Exception{
+        int count =0;
+    if(driver==null){
+     System.out.println(++count);
      System.setProperty("webdriver.chrome.driver", "C:\\Users\\mayank.rathore\\Desktop\\driver\\chromedriver_104\\chromedriver.exe");
      driver = new ChromeDriver();
   }

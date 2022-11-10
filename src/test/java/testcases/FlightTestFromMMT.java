@@ -36,98 +36,8 @@ private String mmtUrl = "https://www.makemytrip.com/flights/" ;
 // }
 //
 
-//public static Message sendEmail(String fromEmailAddress,
-//                                String toEmailAddress)
-//        throws MessagingException, IOException {
-//        /* Load pre-authorized user credentials from the environment.
-//           TODO(developer) - See https://developers.google.com/identity for
-//            guides on implementing OAuth2 for your application.*/
-//
-//    GoogleCredentials credentials = GoogleCredentials.getApplicationDefault()
-//            .createScoped(GmailScopes.GMAIL_SEND);
-//    HttpRequestInitializer requestInitializer = new HttpCredentialsAdapter(credentials);
-//
-//    // Create the gmail API client
-//    Gmail service = new Gmail.Builder(new NetHttpTransport(),
-//            GsonFactory.getDefaultInstance(),
-//            requestInitializer)
-//            .setApplicationName("Gmail samples")
-//            .build();
-//
-//    // Create the email content
-//    String messageSubject = "Test message";
-//    String bodyText = "lorem ipsum.";
-//
-//    // Encode as MIME message
-//    Properties props = new Properties();
-//    Session session = Session.getDefaultInstance(props, null);
-//    MimeMessage email = new MimeMessage(session);
-//    email.setFrom(new InternetAddress(fromEmailAddress));
-//    email.addRecipient(javax.mail.Message.RecipientType.TO,
-//            new InternetAddress(toEmailAddress));
-//    email.setSubject(messageSubject);
-//    email.setText(bodyText);
-//
-//    // Encode and wrap the MIME message into a gmail message
-//    ByteArrayOutputStream buffer = new ByteArrayOutputStream();
-//    email.writeTo(buffer);
-//    byte[] rawMessageBytes = buffer.toByteArray();
-//    String encodedEmail = Base64.encodeBase64URLSafeString(rawMessageBytes);
-//    Message message = new Message();
-//    message.setRaw(encodedEmail);
-//
-//    try {
-//        // Create send message
-//        message = service.users().messages().send("me", message).execute();
-//        System.out.println("Message id: " + message.getId());
-//        System.out.println(message.toPrettyString());
-//        return message;
-//    } catch (GoogleJsonResponseException e) {
-//        // TODO(developer) - handle error appropriately
-//        GoogleJsonError error = e.getDetails();
-//        if (error.getCode() == 403) {
-//            System.err.println("Unable to send message: " + e.getDetails());
-//        } else {
-//            throw e;
-//        }
-//    }
-//    return null;
-//}
-//}
-//
-//
-
-
-
-    public static MimeMessage createEmail(String toEmailAddress,
-
-                                      String fromEmailAddress,
-                                      String subject,
-                                      String bodyText)
-        throws MessagingException {
-    Properties props = new Properties();
-    Session session = Session.getDefaultInstance(props, null);
-
-    MimeMessage email = new MimeMessage(session);
-
-    email.setFrom(new InternetAddress(fromEmailAddress));
-    email.addRecipient(javax.mail.Message.RecipientType.TO,
-            new InternetAddress(toEmailAddress));
-    email.setSubject(subject);
-    email.setText(bodyText);
-    return email;
-}
-
-
-
-
-
     @Test
     public void validateTest() throws InterruptedException, AWTException, MessagingException {
-
-
-//   MimeMessage m =  createEmail("mayankrathore2608@gmail.com","i.mayankrathore@gmail.com","Testing","Hi Mayank");
-
 
      System.setProperty("webdriver.chrome.driver", "C:\\Users\\mayank.rathore\\Desktop\\driver\\chromedriver_104\\chromedriver.exe");
      driver = new ChromeDriver();
@@ -135,7 +45,7 @@ private String mmtUrl = "https://www.makemytrip.com/flights/" ;
      driver.get(mmtUrl);
      driver.manage().window().maximize();
      Thread.sleep(3000);
-  Robot robot = new Robot();
+     Robot robot = new Robot();
 
      WebElement fromField = driver.findElement(By.id("fromCity"));
      fromField.sendKeys("Delhi");
