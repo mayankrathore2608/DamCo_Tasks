@@ -8,4 +8,7 @@ public class TestConfig {
     public static String SUBJECT = "Testing" ;
     public static String BODY_TEXT = "Hi Mayank \\n I am writing this to u because i am testing this functionality ";
     public static String SCREENSHOT_FILE_PATH="C:\\Users\\mayank.rathore\\IdeaProjects\\Damco_Framework\\src\\main\\resources\\screenshot.png";
+    public static String MMT_URL="https://www.makemytrip.com/flights/";
+    public static String SOURCE = "Delhi";
+    public static String DESTINATION = "Mumbai";
 }

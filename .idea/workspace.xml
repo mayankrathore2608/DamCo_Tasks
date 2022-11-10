@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="69b31957-a03f-46a0-bbc4-029675f83da9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/base/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/base/TestBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/config/TestConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/config/TestConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/testcases/FlightTestFromMMT.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testcases/FlightTestFromMMT.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/testcases/TestEmail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testcases/TestEmail.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -46,6 +44,29 @@
     </option>
   </component>
   <component name="RunManager" selected="TestNG.FlightTestFromMMT.validateTest">
+    <configuration name="FlightTestFromMMT" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Damco_Framework" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="testcases.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/testng.xml" />
+      <option name="PACKAGE_NAME" value="testcases" />
+      <option name="MAIN_CLASS_NAME" value="testcases.FlightTestFromMMT" />
+      <option name="METHOD_NAME" value="" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="FlightTestFromMMT.validateTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Damco_Framework" />
       <extension name="coverage">
@@ -83,29 +104,6 @@
       <option name="METHOD_NAME" value="" />
       <option name="GROUP_NAME" value="" />
       <option name="TEST_OBJECT" value="CLASS" />
-      <option name="PARAMETERS" value="" />
-      <option name="OUTPUT_DIRECTORY" value="" />
-      <option name="PROPERTIES_FILE" value="" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestEmail.validateTest (1)" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Damco_Framework" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="testcases.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/testng.xml" />
-      <option name="PACKAGE_NAME" value="testcases" />
-      <option name="MAIN_CLASS_NAME" value="testcases.TestEmail" />
-      <option name="METHOD_NAME" value="validateTest" />
-      <option name="GROUP_NAME" value="" />
-      <option name="TEST_OBJECT" value="METHOD" />
       <option name="PARAMETERS" value="" />
       <option name="OUTPUT_DIRECTORY" value="" />
       <option name="PROPERTIES_FILE" value="" />
@@ -180,10 +178,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="TestNG.FlightTestFromMMT.validateTest" />
+        <item itemvalue="TestNG.FlightTestFromMMT" />
         <item itemvalue="TestNG.TestEmail.validateTest" />
         <item itemvalue="TestNG.TestEmail" />
         <item itemvalue="TestNG.TestEmail.validateTest (2)" />
-        <item itemvalue="TestNG.TestEmail.validateTest (1)" />
       </list>
     </recent_temporary>
   </component>
